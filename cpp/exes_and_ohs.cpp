@@ -3,20 +3,19 @@ bool XO(const std::string& str)
 	int x_count = 0;
 	int o_count = 0;
 
-	for (auto c : str)
+	for (int i = 0; i < str.size(); i++)
 	{
-		if (c == 'x' || c == 'X') 
+		if (str[i] == 'x' || str[i] == 'X') 
 		{
-      std::cout << c << std::endl;
 			x_count++;
 		}
-		else if (c == 'o' || c == 'O')
+		else if (str[i] == 'o' || str[i] == 'O')
 		{
 			o_count++;
 		}
 	}
 	
-	if ((x_count == o_count) || (x_count == 0 && o_count == 0)) 
+	if (x_count == o_count)  
 	{
 		return true;
 	}
