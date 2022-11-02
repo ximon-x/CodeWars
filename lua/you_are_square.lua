@@ -2,14 +2,15 @@ local solution = {}
 
 function solution.issquare(n)
     local result = false
-    for i = 0, n, 1 do
-        if i * i == n
-        then
-            result = true
-        end
-    end
+	
+	sqrt = n ^ 0.5
 
-    return result
+	if sqrt == math.floor(sqrt)
+	then 
+		result = true
+	end
+
+	return result
 end
 
 return solution
