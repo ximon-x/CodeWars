@@ -1,17 +1,25 @@
 package kata
 
 func Comp(array1 []int, array2 []int) bool {
-	// if a or b is nil, return false
+	if array1 == nil || array2 == nil {
+		return false
+	}
 
-	// Iterate through array 1
-	// 		found = false
+	var found bool
 
-	// 		Iterate through array 2
-	// 			if item in array 2 is multiple  of  array 1 item
-	//     			found = true
-	
-	// 		if found = false return false
+	for _, i := range array1 {
+		found = false
 
+		for _, j := range array2 {
+			if j%i == 0 {
+				found = true
+			}
+		}
 
-	// return true
+		if found == false {
+			return false
+		}
+	}
+
+	return true
 }
