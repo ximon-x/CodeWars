@@ -3,7 +3,7 @@ local solution = {}
 function solution.issquare(n)
     local result = false
 	
-	sqrt = n ^ 0.5
+	local sqrt = n ^ 0.5
 
 	if sqrt == math.floor(sqrt)
 	then 
