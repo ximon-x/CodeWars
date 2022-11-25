@@ -5,5 +5,4 @@ def high_and_low(numbers):
         nums[i] = int(nums[i])
 
     result = str(max(nums)) + " " + str(min(nums))
-
-
+    return result
