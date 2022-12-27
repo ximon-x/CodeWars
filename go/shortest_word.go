@@ -7,7 +7,6 @@ func FindShort(s string) int {
 
 	answer := len(words[0])
 	for _, word := range words {
-
 		if len(word) < answer {
 			answer = len(word)
 		}

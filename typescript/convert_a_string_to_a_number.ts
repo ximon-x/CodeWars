@@ -1,4 +1,3 @@
 export function stringToNumber(str: string) {
-	return parseInt(str);
-
+  return parseInt(str);
 }
