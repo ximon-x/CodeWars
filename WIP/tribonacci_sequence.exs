@@ -3,6 +3,4 @@ defmodule TribonacciSequence do
   def tribonacci(signature, n) do
 
   end
-
-
 end
